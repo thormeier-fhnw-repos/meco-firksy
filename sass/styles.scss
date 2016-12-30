@@ -4,3 +4,11 @@
 h1 {
     color: $brand-color;
 }
+
+a, a:visited, a:hover, a:active, a:focus {
+    color: $brand-color;
+}
+
+[data-is-clickable] {
+    display: inline-block;
+}

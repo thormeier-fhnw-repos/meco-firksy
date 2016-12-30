@@ -1,19 +1,19 @@
 /**
  * Used to indicated where to click during the prototype
- * Attach
+ * Attach `data-is-clickable` to all elements that are used
+ * to continue the user journey.
  */
 
 var isClickableSelector = 'data-is-clickable';
-var animated = 'animated';
-var tada = 'tada';
+var animationClass = 'tada';
 
 var flash = function (e) {
     var animationEndListener = function () {
         this.removeEventListener('animationend', animationEndListener);
-        this.classList.remove('tada', 'animated');
+        this.classList.remove(animationClass, 'animated');
     };
 
-    e.classList.add('tada', 'animated');
+    e.classList.add(animationClass, 'animated');
     e.addEventListener('animationend', animationEndListener);
 };
 
@@ -21,7 +21,7 @@ document.addEventListener('click', function (e) {
     if (!e.target.hasAttribute(isClickableSelector)) {
         e.preventDefault();
         var clickables = document.querySelectorAll('[' + isClickableSelector + ']');
-        console.log(clickables);
+
         for (var i = 0; i < clickables.length; i++) {
             flash(clickables[i]);
         }
