@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         watch: {
             assemble: {
                 files: [
-                    'pages/*.hbs'
+                    'pages/**'
                 ],
                 tasks: ['assemble']
             },
