@@ -1,0 +1,22 @@
+[data-note] {
+    background-color: $note-indicator-color;
+    cursor: help;
+    position: relative;
+    &:after {
+        width: $note-width;
+        height: auto;
+        background-color: $note-indicator-color;
+        border: 1px solid $note-indicator-border-color;
+        content: attr(data-note);
+        position: absolute;
+        right: -($note-width + 20px);
+        top: 0;
+        padding: 10px;
+        border-radius: $border-radius-default;
+        display: none;
+        font-weight: normal;
+    }
+    &.show-note:after {
+        display: initial;
+    }
+}

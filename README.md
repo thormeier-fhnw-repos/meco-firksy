@@ -2,8 +2,9 @@ RapidProto
 =
 
 A small application stack that helps developing prototypes with a click hint (indicating where the user may click 
-to continue the user journey), SASS and Handlebars support. Built on top of grunt because it does the job and I learned 
-quite a bit from it. (The grunt tasks are far from optimal, though).
+to continue the user journey), a functionality to add notes to pages (indicated through highlight of a node and showing 
+the note on click) SASS and Handlebars support. Built on top of grunt because it does the job and I learned quite a bit 
+from it. (The grunt tasks are far from optimal, though).
 
 The grunt tasks are livereloading every change that is made to any prototype specific file, including all files in 
 `assets/`, `sass/` and `pages/`. Assets are synced on create and delete and also trigger a live reload to add images 

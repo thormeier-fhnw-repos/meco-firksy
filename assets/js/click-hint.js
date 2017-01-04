@@ -18,12 +18,10 @@ var flash = function (e) {
 };
 
 document.addEventListener('click', function (e) {
-    if (!e.target.hasAttribute(isClickableSelector)) {
-        e.preventDefault();
-        var clickables = document.querySelectorAll('[' + isClickableSelector + ']');
-
-        for (var i = 0; i < clickables.length; i++) {
-            flash(clickables[i]);
-        }
+    if (!e.target.hasAttribute(isClickableSelector)
+        && e.target.tagName.toLowerCase() !== 'input'
+        && e.target.tagName.toLowerCase() !== 'label'
+        && !e.target.hasAttribute('[data-note')) {
+        document.querySelectorAll('[' + isClickableSelector + ']').forEach(flash);
     }
 });
