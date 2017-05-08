@@ -1,0 +1,14 @@
+.progress-bar {
+    height: 60px;
+    border: 1px solid $text-color;
+    content: "";
+
+    &:before {
+        width: 60%;
+        background-color: $brand-color;
+        content: "";
+        display: block;
+        height: 42px;
+        margin: 8px;
+    }
+}

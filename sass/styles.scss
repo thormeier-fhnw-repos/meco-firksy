@@ -1,6 +1,12 @@
 @import '../node_modules/kanbasu/src/assets/scss/kanbasu';
 @import 'settings';
+@import 'controls';
 @import 'note';
+@import 'progress-bar';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 h1 {
     color: $brand-color;
