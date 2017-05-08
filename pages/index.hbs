@@ -3,7 +3,7 @@ layout: default.hbs
 ---
 
 <div class="grid grid--center mrgb mrgt+">
-    <div class="w-1/3 grid__item">
+    <div class="w-1/1 grid__item">
         <div class="text-center">
             <h1 class="pdg0 mrg0">Frisky</h1>
         </div>
@@ -11,7 +11,7 @@ layout: default.hbs
 </div>
 
 <div class="grid grid--center mrgt+ mrgb">
-    <div class="w-1/3 grid__item">
+    <div class="w-1/1 grid__item">
         <div class="text-center">
             <h2 class="pdg0 mrg0">I'm feeling</h2>
         </div>
@@ -19,25 +19,25 @@ layout: default.hbs
 </div>
 
 <div class="grid grid--center mrgv">
-    <div class="w-1/3 grid__item">
+    <div class="w-1/1 grid__item">
         <div class="text-center">
-            <select data-is-clickable>
-                <option>Happy</option>
-                <option>Relaxed/well</option>
-                <option>Neutral</option>
-                <option>Sad</option>
-                <option>Angry</option>
+            <select data-is-clickable class="text-transition" id="moodselect">
+                <option value="green" class="text-transition">Happy</option>
+                <option value="blue" class="text-transition">Relaxed/well</option>
+                <option value="yellow" class="text-transition">Neutral</option>
+                <option value="grey" class="text-transition">Sad</option>
+                <option value="red" class="text-transition">Angry</option>
             </select>
         </div>
     </div>
 </div>
 
 <div class="grid grid--center mrgt+">
-    <div class="w-1/3 grid__item">
+    <div class="w-1/1 grid__item">
         <div class="text-center">
             <a href="player.html" data-is-clickable>
                 <button class="btn btn--primary">
-                    <i class="material-icons">play_arrow</i>
+                    <i class="material-icons text-transition">play_arrow</i>
                 </button>
             </a>
         </div>

@@ -25,3 +25,7 @@ document.addEventListener('click', function (e) {
         document.querySelectorAll('[' + isClickableSelector + ']').forEach(flash);
     }
 });
+
+
+
+

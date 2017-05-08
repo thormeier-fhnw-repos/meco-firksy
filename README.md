@@ -13,7 +13,7 @@ Select a mood and start playing the songs you fed it.
 
 ---
 
-This is a prototype, it doesn't do anything yet. To see the prototype, clone this repository and execute the following:
+This is a prototype, it doesn't do anything yet and the code is *ugly*. To see the prototype, clone this repository and execute the following:
 
     npm install
     grunt

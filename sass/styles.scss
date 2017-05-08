@@ -4,11 +4,17 @@
 @import 'note';
 @import 'progress-bar';
 
+$text-color: #fff;
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+html {
+    transition: background-color 1s ease-in-out;
+}
+
+h1, h2 {
     color: $brand-color;
 }
 
@@ -18,4 +24,45 @@ a, a:visited, a:hover, a:active, a:focus {
 
 [data-is-clickable] {
     display: inline-block;
+}
+
+.text-transition {
+    transition: color 1s ease-in-out;
+}
+
+
+.green {
+    background-color: $background-color;
+}
+.text-green {
+    color: $background-color !important;
+}
+
+.blue {
+    background-color: #303F9F;
+}
+.text-blue {
+    color: #303F9F !important;
+}
+
+.yellow {
+    background-color: #FFEB3B;
+}
+.text-yellow {
+    color: #FFEB3B !important;
+}
+
+.grey {
+    background-color: #455A64;
+}
+
+.text-grey {
+    color: #455A64 !important;
+}
+
+.red {
+    background-color: #B71C1C;
+}
+.text-red {
+    color: #B71C1C !important;
 }
