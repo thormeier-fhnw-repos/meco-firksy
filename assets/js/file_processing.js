@@ -6,8 +6,11 @@ function getSongs() {
     return JSON.parse(localStorage.getItem('songs'))
 }
 
+function getSongsByMood(mood) {
+    return getSongs().filter(function (s) { return s.mood === mood })
+}
 
-if (document.querySelector('form') != null) {
+if (document.querySelector('form') !== null) {
     document.querySelector('form').addEventListener('submit', function (e) {
         e.preventDefault()
 
