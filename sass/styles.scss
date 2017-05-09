@@ -28,6 +28,9 @@ a, a:visited, a:hover, a:active, a:focus {
 
 .text-transition {
     transition: color 1s ease-in-out;
+    &:after, &:before {
+        transition: color 1s ease-in-out;
+    }
 }
 
 
@@ -36,6 +39,9 @@ a, a:visited, a:hover, a:active, a:focus {
 }
 .text-green {
     color: $background-color !important;
+    &:after, &:before {
+        color: $background-color !important;
+    }
 }
 
 .blue {
@@ -43,6 +49,9 @@ a, a:visited, a:hover, a:active, a:focus {
 }
 .text-blue {
     color: #303F9F !important;
+    &:after, &:before {
+        color: #303F9F !important;
+    }
 }
 
 .yellow {
@@ -50,6 +59,9 @@ a, a:visited, a:hover, a:active, a:focus {
 }
 .text-yellow {
     color: #EF6C00 !important;
+    &:after, &:before {
+        color: #EF6C00 !important;
+    }
 }
 
 .grey {
@@ -58,6 +70,9 @@ a, a:visited, a:hover, a:active, a:focus {
 
 .text-grey {
     color: #455A64 !important;
+    &:after, &:before {
+        color: #455A64 !important;
+    }
 }
 
 .red {
@@ -65,4 +80,7 @@ a, a:visited, a:hover, a:active, a:focus {
 }
 .text-red {
     color: #B71C1C !important;
+    &:after, &:before {
+        color: #B71C1C !important;
+    }
 }
